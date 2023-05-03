@@ -38,16 +38,65 @@
 // $num2=11;
 // $num1/=10;
 // echo $num1;
-$name="ewew";
-if($name=='ahmad'){
-    echo "welcome";
-}elseif($name=='ali'){
-echo "Welcome Ali";
-}elseif($name=='ahmad'){
-    echo "Welcome My frind Fhd";
-    }else{
-  echo "not welcome"; 
+// $first_name="ahmad";
+// $last_name="khaled1";
+// if($name=='ahmad'){
+//     echo "welcome";
+// }elseif($name=='ali'){
+// echo "Welcome Ali";
+// }elseif($name=='ahmad'){
+//     echo "Welcome My frind Fhd";
+//     }else{
+//   echo "not welcome"; 
+// }
+//        true          &&    false
+// if($first_name=='ahmad' || $last_name=='khaled'){
+//   echo "welcome ".$first_name;
+// }
+// $num2=6;
+// $num3= $num2==4  ?  5 :  6;
+
+// echo $num2;
+// echo "<br>";
+// echo $num3;
+// $name="fhd";
+
+// $names=[
+//   "ahmad","mohammad",12,true,5>4,$name
+// ];
+
+// $numbers=[
+//   [1,3,5,7,9],
+//   [2,4,6,8,10],
+//   [0,1,2,3,4,['a','b']],
+// ];
+
+// echo "<pre>";
+// print_r($numbers[2][5][1]);
+// echo "</pre>";
+
+// $students=[
+//  "st1"=> [
+//   "info"=>["name"=>"ahmad","age"=>18,"is_success"=>true],
+// 'parent'=>['father'=>'walid','mother'=>'hameda'],
+// ],
+ 
+// ];
+// print_r( $students["st1"]);
+
+//$names=['ahmad','ali','walid','fhd'];
+for($i=0;$i<10;$i++) {
+  
+//   if($i==5){
+//   break;
+// }
+if($i==5){
+  continue;
+}
+echo $i;
+
+  
 }
 
 
-echo "end if";
+
