@@ -85,18 +85,128 @@
 // print_r( $students["st1"]);
 
 //$names=['ahmad','ali','walid','fhd'];
-for($i=0;$i<10;$i++) {
+// for($i=0;$i<10;$i++) {
   
-//   if($i==5){
-//   break;
+// //   if($i==5){
+// //   break;
+// // }
+// if($i==5){
+//   continue;
 // }
-if($i==5){
-  continue;
-}
-echo $i;
+// echo $i;
 
   
+// }
+
+################ Home Work #####################
+// for($i=0;$i<30;$i++) {
+//   if($i%2!=0){
+//     echo $i;
+//   }
+//   }
+  #######################################
+
+// $names=['ahmad','ali','fhd','walied'];
+// for($i=0;$i<count($names);$i++){
+//   echo $names[$i]."<br>";
+// }
+
+// foreach($names as $item){
+//   echo $item."<br>";
+// }
+
+
+// $student = [
+//   [
+//   'age'=>18,
+//   "name"=>'ahmad',
+//   'is_success'=>true,
+  
+// ],
+//   [
+   
+//   'age'=>18,
+//   'is_success'=>true,
+//   "name"=>'ali',
+// ],
+// ];
+// $i=0;
+// تستخدم فقط مع المصفوفات
+// foreach($student as $key => $value){
+//   // $value=['age' ,'is_success', 'name']
+//   foreach($value as $k=>$item){
+//     $i++;
+//     if($k=='name'){
+//       echo $item;
+//       break;
+//     }
+//   }
+// }
+// echo $i;
+// $i=0;
+// while($i<10){
+//   $i++; 
+// if($i==5){
+//   continue;
+// }
+// echo $i;
+// }
+// $i=0;
+// do{
+// echo $i;
+// $i++;
+// }while($i<10);
+
+
+// function print_array(){
+// $names=['ahmad','ali'];
+// foreach($names as $name){
+//   echo $name;
+// }
+// }
+// print_array();
+
+// function plus() : void{
+//   echo 5+1;
+// }
+// //plus();
+
+// function div() : float{
+//   return 4/2;
+// }
+
+// $x=div();
+// echo $x;
+
+// function add($x,$y,$z=12){
+//   echo $x+$y+$z;
+// }
+// $num1=5;
+// $num2=10;
+// add($num1,$num2,3);
+
+function area($width,$length,$x,$r=null){
+if($r!=null){
+  echo $r;
 }
+else{
+  echo $width* $length;
+}
+}
+
+//area(10,20,5);
+
+function multi(...$x){
+  $result=1;
+ foreach($x as $i){
+$result*=$i;
+ }
+ echo $result;
+}
+
+multi(4,5,6,7,8,1,2,5);
+
+
 
 
 
