@@ -116,7 +116,17 @@
 // }
 
 
-// $student = [
+// $list=[
+// [
+//   [1,2,3,4]
+// ],
+// [
+//  [ 'a',
+//  'b','c']
+// ]
+// ];
+// echo $list[0][0][3];
+// $students = [
 //   [
 //   'age'=>18,
 //   "name"=>'ahmad',
@@ -129,29 +139,40 @@
 //   'is_success'=>true,
 //   "name"=>'ali',
 // ],
-// ];
+//   ];
+//   $numbers=[
+//     [1,3,5,7,9,],
+//     [2,4,6,8,10]
+//   ];
 // $i=0;
+// for($i=0;$i<count($numbers);$i++){
+//   for($j=0;$j<count($numbers[$i]);$j++){
+//     echo $numbers[$i][$j];
+//   }
+// }
 // تستخدم فقط مع المصفوفات
-// foreach($student as $key => $value){
+// foreach($students as $value){
 //   // $value=['age' ,'is_success', 'name']
 //   foreach($value as $k=>$item){
-//     $i++;
-//     if($k=='name'){
-//       echo $item;
-//       break;
-//     }
+   
+    
+//       echo $item.'<br>';
+    
 //   }
 // }
 // echo $i;
 // $i=0;
 // while($i<10){
+//   echo $i;
 //   $i++; 
-// if($i==5){
-//   continue;
-// }
-// echo $i;
-// }
-// $i=0;
+//   if($i==5){
+
+//     continue;
+//   }
+
+ 
+//  }
+//  $i=0;
 // do{
 // echo $i;
 // $i++;
@@ -159,53 +180,103 @@
 
 
 // function print_array(){
+
 // $names=['ahmad','ali'];
 // foreach($names as $name){
 //   echo $name;
 // }
+
+
 // }
-// print_array();
+//  print_array();
 
 // function plus() : void{
-//   echo 5+1;
+//   echo 8+1;
 // }
-// //plus();
+// plus();
 
 // function div() : float{
+  
 //   return 4/2;
 // }
 
-// $x=div();
-// echo $x;
+//  $x=div();
+//  echo $x;
 
-// function add($x,$y,$z=12){
+// function add($x,$y,$z=10){
 //   echo $x+$y+$z;
 // }
 // $num1=5;
 // $num2=10;
-// add($num1,$num2,3);
+// add(5,6);
 
-function area($width,$length,$x,$r=null){
-if($r!=null){
-  echo $r;
+// function area($width,$length,$r=null){
+// if($r!=null){
+//   echo $r;
+// }
+// else{
+//   echo $width* $length;
+// }
+// }
+
+// area(10,2,4);
+
+// function multi(...$x){
+//   $result=1;
+//  foreach($x as $i){
+// $result*=$i;
+//  }
+//  echo $result;
+// }
+
+// multi(true,1,6,9,3);
+
+$num1=4;
+$num2='q';
+
+function sum($num1,$num2){
+echo $num1+$num2;
 }
-else{
-  echo $width* $length;
-}
-}
 
-//area(10,20,5);
 
-function multi(...$x){
-  $result=1;
- foreach($x as $i){
-$result*=$i;
- }
- echo $result;
-}
 
-multi(4,5,6,7,8,1,2,5);
 
+  function div($num1,$num2){
+    try{
+      echo $num1/$num2;
+  
+    }catch(DivisionByZeroError $e){
+      echo 'لا تقسم على 0';
+    }catch(Exception|Error $e){
+     echo $e->getCode();
+    }
+    
+    }
+
+    function minus($num1,$num2){
+      echo $num1-$num2;
+      }
+
+
+
+      // function multi($num1,$num2){
+      //   try{
+      //     echo $num1*$num2;
+      //   }catch(Exception | Error $e){
+      //    throw new Exception('dsfdfs',44);
+      //   }
+       
+      //   }
+        
+      
+      
+      //   try{
+      //     multi(4,'r'); 
+      //   }catch(Exception $e){
+      //     echo $e->getCode().' '.$e->getMessage();
+      //   }
+
+      
 
 
 
