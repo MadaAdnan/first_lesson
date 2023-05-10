@@ -1,4 +1,4 @@
-<form action="login.php" method="get">
+<form action="switch.php" method="post">
     userName
    <input type="text" name="num1">
    <br>
