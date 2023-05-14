@@ -40,4 +40,15 @@ $array2=[1,2,3,4,5];
 // echo "<pre>";
 // print_r($arr);
 // echo "</pre>";
+
+$array=[1,5,3,8,9,0];
+$num=6;
+// هل العنصر موجود في المصفوفة   TRUE || FALSE
+//echo in_array($num,$array);
+//  هل المتغير عبارة عن مصفوفة  TRUE || FALSE
+//echo is_array($num);
+// قص المصفوفة من عنصر معين وجلب عدد من العناصر بعده
+$arr=array_slice($array,2,2);
+//print_r($arr);
+
 ?>
