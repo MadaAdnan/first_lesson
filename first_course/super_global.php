@@ -2,10 +2,10 @@
 // echo $_SERVER['PHP_SELF'];
 // echo $_SERVER['HTTP_HOST'];
 // echo $_SERVER['HTTP_USER_AGENT'];
-//echo $_SERVER['HTTP_REFERER'];
-//echo $_SERVER['SCRIPT_NAME'];
+// echo $_SERVER['HTTP_REFERER'];
+// echo $_SERVER['SCRIPT_NAME'];
 
-// echo $_SERVER['REQUEST_METHOD'];
+// echo $_SERVER['SERVER_PROTOCOL'];
 
 
 // echo $_REQUEST['name'];
@@ -15,10 +15,10 @@
 
 // echo "asd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;asd"
 
-if(empty($_GET['name'])){
-    echo 'enter your name';
-}
-else{
-    echo 'thank you '.$_GET['name'];
-}
+// if( $_SERVER['REQUEST_METHOD']=='GET'){
+//     echo $_GET['name'];
+// }else{
+//     echo $_POST['name'];
+// }
+phpinfo();
 ?>

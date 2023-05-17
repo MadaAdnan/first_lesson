@@ -2,12 +2,12 @@
     userName
    <input type="text" name="name">
    <br>
-   Password
+   <!-- Password
    <input type="text" name="num2">
    <br>
    Opertaor
    <input type="text" name="op">
-   <br>
+   <br> -->
    <button type="submit">
     دخول
    </button>
